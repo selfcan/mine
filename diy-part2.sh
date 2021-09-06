@@ -48,5 +48,7 @@ add luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 add luci-app-gowebdav
 git clone https://github.com/immortalwrt/openwrt-gowebdav.git package/luci-app-gowebdav
+add luci-app-aliyundrive-webdav
+git clone https://github.com/tcsr200722/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
 ./scripts/feeds update -a
 ./scripts/feeds install -a
