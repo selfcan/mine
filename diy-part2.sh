@@ -50,5 +50,7 @@ add luci-app-gowebdav
 git clone https://github.com/immortalwrt/openwrt-gowebdav.git package/luci-app-gowebdav
 add luci-app-aliyundrive-webdav
 git clone https://github.com/tcsr200722/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
+add luci-app-jellyfin
+git clone https://github.com/tcsr200722/luci-app-jellyfin.git package/luci-app-jellyfin
 ./scripts/feeds update -a
 ./scripts/feeds install -a
