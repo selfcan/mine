@@ -52,5 +52,8 @@ add luci-app-aliyundrive-webdav
 #git clone https://github.com/tcsr200722/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
 add luci-app-jellyfin
 git clone https://github.com/tcsr200722/luci-app-jellyfin.git package/luci-app-jellyfin
+add go-aliyun-webdav
+git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
+git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
 ./scripts/feeds update -a
 ./scripts/feeds install -a
