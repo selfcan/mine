@@ -16,8 +16,8 @@ add koolproxyR
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR.git package/luci-app-koolproxyR
 add luci-app-adbyby-plus
 #git clone https://github.com/tcsr200722/app-adbyby.git package/luci-app-adbyby-plus
-add luci-app-godproxy
-git clone https://github.com/project-lede/luci-app-godproxy.git package/luci-app-godproxy
+add luci-app-ikoolproxy
+git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 add luci-app-filebrowser
 git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 add luci-app-dockerman
