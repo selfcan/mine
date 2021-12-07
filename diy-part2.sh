@@ -33,6 +33,8 @@ add luci-app-adblock-plus
 git clone https://github.com/tcsr200722/luci-app-adblock-plus.git package/luci-app-adblock-plus
 add luci-app-jd-dailybonus
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+add luci-app-speedtest-web
+git clone https://github.com/tcsr200722/luci-app-speedtest-web.git package/luci-app-speedtest-web
 add NetSpeedTest
 #git clone https://github.com/sirpdboy/NetSpeedTest package/luci-app-NetSpeedTest
 add luci-app-diskman
