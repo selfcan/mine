@@ -37,6 +37,8 @@ add luci-app-speedtest-web
 git clone https://github.com/tcsr200722/luci-app-speedtest-web.git package/luci-app-speedtest-web
 add NetSpeedTest
 #git clone https://github.com/sirpdboy/NetSpeedTest package/luci-app-NetSpeedTest
+add luci-app-easymesh
+git clone https://github.com/tcsr200722/luci-app-easymesh.git package/luci-app-easymesh
 add luci-app-diskman
 mkdir -p package/luci-app-diskman && \
 wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O package/luci-app-diskman/Makefile
