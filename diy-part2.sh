@@ -60,6 +60,8 @@ add luci-app-podminidlna
 git clone https://github.com/lisaac/luci-app-podminidlna.git package/luci-app-podminidlna
 add luci-app-podsamba
 git clone https://github.com/lisaac/luci-app-podsamba.git package/luci-app-podsamba
+add luci-app-alist
+git clone https://github.com/sbwml/openwrt-alist.git package/luci-app-alist
 add go-aliyun-webdav
 git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
