@@ -65,5 +65,7 @@ git clone https://github.com/sbwml/openwrt-alist.git package/luci-app-alist
 add go-aliyun-webdav
 git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
+add luci-app-argon-config
+git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app-argon-config
 ./scripts/feeds update -a
 ./scripts/feeds install -a
