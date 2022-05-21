@@ -12,6 +12,8 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
+# 指定内核为5.4
+sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
 add koolproxyR 
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR.git package/luci-app-koolproxyR
 add luci-app-adbyby-plus
