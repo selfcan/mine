@@ -70,5 +70,7 @@ git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
 add luci-app-argon-config
 git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app-argon-config
+add luci-app-aliyundrive-fuse
+git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
 ./scripts/feeds update -a
 ./scripts/feeds install -a
