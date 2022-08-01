@@ -72,5 +72,7 @@ add luci-app-argon-config
 git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app-argon-config
 add luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
+add luci-app-alist
+git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
 ./scripts/feeds update -a
 ./scripts/feeds install -a
