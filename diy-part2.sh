@@ -33,7 +33,7 @@ add openwrt-upx
 add luci-app-dnsfilter
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 add luci-app-adblock-plus
-git clone https://github.com/tcsr200722/luci-app-adblock-plus.git package/luci-app-adblock-plus
+git clone https://github.com/zheshifandian/luci-app-adblock-plus.git package/luci-app-adblock-plus
 add luci-app-jd-dailybonus
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 add luci-app-speedtest-web
