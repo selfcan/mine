@@ -74,8 +74,7 @@ add luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
 add luci-app-alist
 #git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
-git clone https://github.com/fw876/helloworld.git package/helloworld
-./scripts/feeds update helloworld
-./scripts/feeds install -a -f -p helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+git -C package/helloworld pull
 ./scripts/feeds update -a
 ./scripts/feeds install -a
