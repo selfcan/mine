@@ -76,5 +76,7 @@ add luci-app-alist
 #git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git -C package/helloworld pull
+./scripts/feeds update helloworld
+./scripts/feeds install -a -f -p helloworld
 ./scripts/feeds update -a
 ./scripts/feeds install -a
