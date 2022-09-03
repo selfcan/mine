@@ -72,6 +72,8 @@ add luci-app-argon-config
 git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app-argon-config
 add luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
+add luci-app-bypass
+git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
 add luci-app-alist
 #git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
