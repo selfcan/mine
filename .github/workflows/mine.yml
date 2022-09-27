@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: coolsnowwolf5-4
+name: coolsnowwolf
 
 on:
   repository_dispatch:
