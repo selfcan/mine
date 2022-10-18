@@ -78,6 +78,9 @@ add luci-app-alist
 git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
 add helloword
 git clone https://github.com/fw876/helloworld.git package/helloworld
-git -C package/helloworld pull
+add luci-app-adbyby-plus-lite
+git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus-lite
+add luci-app-homebox
+git clone https://github.com/selfcan/luci-app-homebox.git package/luci-app-homebox
 ./scripts/feeds update -a
 ./scripts/feeds install -a
