@@ -75,10 +75,9 @@ git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliy
 add luci-app-bypass
 git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
 add luci-app-alist
-#git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
-git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
+add helloword
+git clone https://github.com/fw876/helloworld.git package/helloworld
 git -C package/helloworld pull
-./scripts/feeds update helloworld
-./scripts/feeds install -a -f -p helloworld
 ./scripts/feeds update -a
 ./scripts/feeds install -a
