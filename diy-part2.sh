@@ -12,9 +12,6 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_generate
-# 修改内核版本
-# sed -i 's/KERNEL_PATCHVER:=5.19/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
-# sed -i 's/KERNEL_TESTING_PATCHVER:=5.19/KERNEL_TESTING_PATCHVER:=5.4/g' target/linux/x86/Makefile
 add koolproxyR 
 #git clone https://github.com/Beginner-Go/luci-app-koolproxyR.git package/luci-app-koolproxyR
 add luci-app-adbyby-plus
@@ -73,11 +70,11 @@ git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app
 add luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
 add luci-app-bypass
-git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
+# git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
 add luci-app-alist
 git clone https://github.com/selfcan/luci-app-alist.git package/luci-app-alist
 add helloword
-git clone https://github.com/fw876/helloworld.git package/helloworld
+# git clone https://github.com/fw876/helloworld.git package/helloworld
 add luci-app-adbyby-plus-lite
 git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus-lite
 add luci-app-homebox
