@@ -12,6 +12,8 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_generate
+sed -i "/helloworld/d" "feeds.conf.default"
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 add koolproxyR 
 #git clone https://github.com/Beginner-Go/luci-app-koolproxyR.git package/luci-app-koolproxyR
 add luci-app-adbyby-plus
@@ -81,3 +83,5 @@ add luci-app-homebox
 git clone https://github.com/selfcan/luci-app-homebox.git package/luci-app-homebox
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+./scripts/feeds update helloworld
+./scripts/feeds install -a -f -p helloworld
