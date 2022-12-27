@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build X86
+name: Build lean5861
 
 on:
   repository_dispatch:
