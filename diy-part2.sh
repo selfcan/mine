@@ -24,6 +24,8 @@ add luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 add luci-app-dnsfilter
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
+add luci-app-my-dnshelper
+git clone https://github.com/kongfl888/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 add luci-app-easymesh
 #git clone https://github.com/tcsr200722/luci-app-easymesh.git package/luci-app-easymesh
 add luci-app-diskman
