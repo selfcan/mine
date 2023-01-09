@@ -17,8 +17,9 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/f
 add luci-app-adbyby-plus
 #git clone https://github.com/tcsr200722/app-adbyby.git package/luci-app-adbyby-plus
 add luci-app-filebrowser
-git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
+#git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
+git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 add luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
@@ -28,7 +29,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-ap
 add luci-app-dnsfilter
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 add luci-app-my-dnshelper
-git clone https://github.com/kongfl888/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
+#git clone https://github.com/kongfl888/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 add luci-app-easymesh
 #git clone https://github.com/tcsr200722/luci-app-easymesh.git package/luci-app-easymesh
 add luci-app-diskman
@@ -61,7 +62,5 @@ add luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
 add luci-app-bypass
 # git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
-# 添加 filebrowser
-git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 ./scripts/feeds update -a
 ./scripts/feeds install -a
