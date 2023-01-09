@@ -12,6 +12,8 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_generate
+# Clear the login password
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 add luci-app-adbyby-plus
 #git clone https://github.com/tcsr200722/app-adbyby.git package/luci-app-adbyby-plus
 add luci-app-filebrowser
@@ -59,5 +61,7 @@ add luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
 add luci-app-bypass
 # git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
+# 添加 filebrowser
+git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 ./scripts/feeds update -a
 ./scripts/feeds install -a
