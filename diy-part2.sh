@@ -16,6 +16,10 @@ sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_gene
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 add luci-app-adbyby-plus
 #git clone https://github.com/tcsr200722/app-adbyby.git package/luci-app-adbyby-plus
+add luci-app-adbyby-plus-lite
+git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
+add luci-app-my-dnshelper
+git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 add luci-app-filebrowser
 #git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
