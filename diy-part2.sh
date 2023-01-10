@@ -58,6 +58,9 @@ add luci-app-podsamba
 #git clone https://github.com/lisaac/luci-app-podsamba.git package/luci-app-podsamba
 add luci-app-alist
 git clone https://github.com/sbwml/openwrt-alist.git package/luci-app-alist
+# 重新添加 luci-app-netdata
+rm -rf feeds/luci/applications/luci-app-netdata
+git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 add go-aliyun-webdav
 git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
