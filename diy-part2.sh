@@ -16,7 +16,8 @@ sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_gene
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 add luci-app-adbyby-plus
 #git clone https://github.com/tcsr200722/app-adbyby.git package/luci-app-adbyby-plus
-add luci-app-adbyby-plus-lite
+# 重新添加 luci-app-serverchan
+rm -rf feeds/luci/applications/luci-app-adbyby-plus
 git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
 add luci-app-my-dnshelper
 git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
