@@ -22,9 +22,9 @@ add luci-app-adbyby-plus
 add luci-app-my-dnshelper
 #git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 add luci-app-filebrowser
-#git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
+git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
-git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
+#git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 add luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
