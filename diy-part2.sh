@@ -17,6 +17,8 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/f
 # 重新添加 luci-app-adbyby-plus-lite
 #rm -rf feeds/luci/applications/luci-app-adbyby-plus
 #git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
+#添加luci-app-netspeedtest
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 #添加 luci-app-my-dnshelper
 #git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 #添加luci-app-filebrowser
