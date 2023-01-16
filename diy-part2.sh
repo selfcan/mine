@@ -10,71 +10,66 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
+# 更改默认IP地址
 sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_generate
-# Clear the login password
+# 清空登录密码
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
-add luci-app-adbyby-plus
-#git clone https://github.com/tcsr200722/app-adbyby.git package/luci-app-adbyby-plus
-# 重新添加 luci-app-adbyby-plus
+# 重新添加 luci-app-adbyby-plus-lite
 #rm -rf feeds/luci/applications/luci-app-adbyby-plus
 #git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
-add luci-app-my-dnshelper
+#添加 luci-app-my-dnshelper
 #git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
-add luci-app-filebrowser
+#添加luci-app-filebrowser
 git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
-add luci-app-dockerman
+#添加luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
-add luci-app-argon-config
+#添加luci-app-argon-config
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-add luci-app-dnsfilter
-#git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
-git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
-# 重新添加 luci-app-dnsfilter
+#添加luci-app-dnsfilter
 #rm -rf feeds/luci/applications/luci-app-dnsfilter
 git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
-add luci-app-autotimeset
+#添加luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
-add luci-app-my-dnshelper
+#添加luci-app-my-dnshelper
 #git clone https://github.com/kongfl888/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
-add luci-app-easymesh
+#添加luci-app-easymesh
 #git clone https://github.com/tcsr200722/luci-app-easymesh.git package/luci-app-easymesh
-add luci-app-diskman
+#添加luci-app-diskman
 mkdir -p package/luci-app-diskman && \
 wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O package/luci-app-diskman/Makefile
 mkdir -p package/parted && \
 wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile
-add luci-app-oaf
+#添加luci-app-oaf网络过滤
 #git clone https://github.com/tcsr200722/OpenAppFilter.git package/luci-app-oaf
-add luci-app-dockerman
+#添加luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-add luci-app-gowebdav
+#添加luci-app-gowebdav
 git clone https://github.com/immortalwrt/openwrt-gowebdav.git package/luci-app-gowebdav
-add luci-app-aliyundrive-webdav
+#添加luci-app-aliyundrive-webdav
 #git clone https://github.com/tcsr200722/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
-add luci-app-jellyfin
+#添加luci-app-jellyfin
 git clone https://github.com/tcsr200722/luci-app-jellyfin.git package/luci-app-jellyfin
-add luci-app-podminidlna
+#添加luci-app-podminidlna
 #git clone https://github.com/lisaac/luci-app-podminidlna.git package/luci-app-podminidlna
-add luci-app-podsamba
+#添加luci-app-podsamba
 #git clone https://github.com/lisaac/luci-app-podsamba.git package/luci-app-podsamba
-add luci-app-alist
+#添加luci-app-alist
 git clone https://github.com/sbwml/openwrt-alist.git package/luci-app-alist
 # 重新添加 luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-netdata
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
-add go-aliyun-webdav
+#添加go-aliyun-webdav
 git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
 add luci-app-argon-config
 git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app-argon-config
-add luci-app-aliyundrive-fuse
+#添加luci-app-aliyundrive-fuse
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
-add luci-app-bypass
+#添加luci-app-bypass
 # git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
 ./scripts/feeds update -a
 ./scripts/feeds install -a
