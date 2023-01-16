@@ -34,6 +34,9 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-ap
 add luci-app-dnsfilter
 #git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
+# 重新添加 luci-app-dnsfilter
+#rm -rf feeds/luci/applications/luci-app-dnsfilter
+git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
 add luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 add luci-app-my-dnshelper
