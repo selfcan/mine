@@ -1,0 +1,61 @@
+name: build_pavadan
+
+on:
+  watch:
+    types: [started]
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
+   
+env:
+  repo_url: https://github.com/selfcan/Padavan-KVR.git
+  repo_branch: master
+  repo_os: pavanda
+  model: HC5861
+
+
+jobs:
+    build:
+      runs-on: ubuntu-20.04
+
+      steps:
+        - name: 获取本仓库源码
+          uses: actions/checkout@main
+  
+        - name: 清理＆配置环境
+          run: |
+            docker rmi `docker images -q`
+            sudo apt update
+            sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
+            	fakeroot kmod cpio git python3-docutils gettext automake autopoint \
+            	texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
+            	libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+          
+        - name: 获取源码
+          run: |
+              cd /
+              git clone --recurse-submodules $repo_url -b $repo_branch /opt/rt-n56u
+              git clone https://github.com/selfcan/5861.git /opt/rt-n56u/5861
+              cd /opt/rt-n56u
+              cp -rf 5861/*/*.config /opt/rt-n56u/trunk/configs/templates
+              cp -rf 5861/* /opt/rt-n56u/trunk/configs/boards
+              cd /opt/rt-n56u/toolchain-mipsel
+              sh dl_toolchain.sh              
+
+        - name: 编译固件
+          run: |
+              cd /opt/rt-n56u/trunk
+              fakeroot ./build_firmware_modify $model
+             
+        - name: 移动生成至5861目录
+          run: |
+           mkdir 5861
+           rm -rf 5861/*           
+           mv /opt/rt-n56u/trunk/images/*.trx zhlhlf         
+                              
+        - name: Upload artifact
+          uses: actions/upload-artifact@master
+          with:
+           name: pavadan
+           path: 5861/
