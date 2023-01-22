@@ -44,7 +44,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: HC5861B
+        TNAME: HC5861
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
