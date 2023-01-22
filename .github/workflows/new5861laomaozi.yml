@@ -52,7 +52,7 @@ jobs:
           run: |
            mkdir 5861
            rm -rf 5861/*           
-           mv /opt/rt-n56u/trunk/images/*.trx zhlhlf         
+           mv /opt/rt-n56u/trunk/images/*.trx 5861         
                               
         - name: Upload artifact
           uses: actions/upload-artifact@master
