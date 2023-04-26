@@ -56,10 +56,6 @@ jobs:
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         #改 LAN IP 信息
         sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
-        #改 LAN IP 信息
-        #sed -i 's/_%/CMCC-AUTO/' /opt/rt-n56u/trunk/user/shared/defaults.h
-        #改 LAN IP 信息
-        #sed -i 's/_GUEST/ /' /opt/rt-n56u/trunk/user/shared/defaults.h
         #改 DHCP 分配起始、终结地址
         sed -i 's/192.168.2.100/10.10.10.11/' /opt/rt-n56u/trunk/user/shared/defaults.h
         sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h
@@ -115,7 +111,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config #网易云解锁
         echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config #网易云解锁GO版本执行文件（4M多）注意固件超大小,不集成会自动下载
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
-        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_CADDY=y" >> .config #在线文件管理服务
         echo "CONFIG_FIRMWARE_INCLUDE_KOOLPROXY=y" >> .config #KP广告过滤
         fi
