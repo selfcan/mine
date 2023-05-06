@@ -73,5 +73,6 @@ git clone https://github.com/selfcan/luci-app-argon-config.git  package/luci-app
 git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliyundrive-fuse
 #添加luci-app-bypass
 # git clone https://github.com/kiddin9/openwrt-bypass.git package/luci-app-bypass
+git clone https://github.com/gngpp/nas-xunlei.git package/luci-app-xunlei
 ./scripts/feeds update -a
 ./scripts/feeds install -a
