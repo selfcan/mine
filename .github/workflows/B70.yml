@@ -129,5 +129,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-HC5861
+        name: Padavan-B70
         path: /opt/images
