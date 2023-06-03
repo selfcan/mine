@@ -20,7 +20,7 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/f
 #添加luci-app-netspeedtest
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 #添加 luci-app-my-dnshelper
-#git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
+git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 #添加luci-app-filebrowser
 git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
