@@ -112,12 +112,11 @@ CONFIG_PACKAGE_luci-app-cifsd=y
 CONFIG_PACKAGE_luci-app-diskman=y
 # CONFIG_PACKAGE_luci-app-filetransfer is not set
 CONFIG_PACKAGE_luci-app-minidlna=y
+CONFIG_PACKAGE_luci-app-my-dnshelper=y
 # CONFIG_PACKAGE_luci-app-ssr-plus is not set
 CONFIG_PACKAGE_luci-app-ttyd=y
-CONFIG_PACKAGE_luci-app-turboacc=n
-CONFIG_PACKAGE_luci-app-my-dnshelper=y
+CONFIG_PACKAGE_luci-app-turboacc=y
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
-CONFIG_PACKAGE_luci-app-vsftpd=y
 # CONFIG_PACKAGE_luci-app-wol is not set
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
@@ -132,6 +131,7 @@ CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
 # CONFIG_PACKAGE_microsocks is not set
 CONFIG_PACKAGE_minidlna=y
+CONFIG_PACKAGE_my-dnshelper=y
 CONFIG_PACKAGE_parted=y
 # CONFIG_PACKAGE_pdnsd-alt is not set
 # CONFIG_PACKAGE_resolveip is not set
@@ -149,7 +149,6 @@ CONFIG_PACKAGE_smartmontools=y
 CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_ttyd=y
 # CONFIG_PACKAGE_vlmcsd is not set
-# CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_wol is not set
 CONFIG_PACKAGE_wsdd2=y
 CONFIG_PARTED_READLINE=y
