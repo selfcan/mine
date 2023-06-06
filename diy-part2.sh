@@ -76,5 +76,7 @@ git clone https://github.com/messense/aliyundrive-fuse.git package/luci-app-aliy
 git clone https://github.com/gngpp/nas-xunlei.git package/luci-app-xunlei
 add luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
+add luci-theme-kucat
+git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
 ./scripts/feeds update -a
 ./scripts/feeds install -a
