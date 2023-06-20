@@ -78,5 +78,8 @@ add luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 add luci-theme-kucat
 git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
+rm -rf feeds/packages/net/ariang
+rm -rf feeds/luci/applications/luci-app-aria2
+git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
 ./scripts/feeds update -a
 ./scripts/feeds install -a
