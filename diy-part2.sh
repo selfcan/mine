@@ -80,6 +80,6 @@ add luci-theme-kucat
 git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
 rm -rf feeds/packages/net/ariang
 rm -rf feeds/luci/applications/luci-app-aria2
-git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
+# git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
 ./scripts/feeds update -a
 ./scripts/feeds install -a
