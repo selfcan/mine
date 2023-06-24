@@ -80,7 +80,7 @@ add luci-theme-kucat
 git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
 #rm -rf feeds/packages/net/ariang
 #rm -rf feeds/luci/applications/luci-app-aria2
-rm -rf feeds/packages/net/luci-app-aria2
+#rm -rf feeds/packages/net/luci-app-aria2
 # git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
 git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
 ./scripts/feeds update -a
