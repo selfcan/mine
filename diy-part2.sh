@@ -17,7 +17,7 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 # 清空登录密码
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 修改bootstrap主题为atmaterial主题
-sed -i 's/luci-theme-bootstrap/luci-theme-kucat/g' ./feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-darkmatter/g' ./feeds/luci/collections/luci/Makefile
 #cd lede/package/lean
 #rm -rf luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
@@ -85,6 +85,7 @@ add luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 add luci-theme-kucat
 git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
+git clone https://github.com/uparrows/luci-theme-darkmatter.git package/luci-theme-darkmatter
 #rm -rf feeds/packages/net/ariang
 #rm -rf feeds/luci/applications/luci-app-aria2
 #git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
