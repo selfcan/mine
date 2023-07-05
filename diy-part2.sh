@@ -23,7 +23,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-kucat/g' ./feeds/luci/collections/luci
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 # 重新添加 luci-app-adbyby-plus-lite
 #rm -rf feeds/luci/applications/luci-app-adbyby-plus
-#git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
+git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
 #添加luci-app-netspeedtest
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 #添加 luci-app-my-dnshelper
@@ -85,9 +85,9 @@ add luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 add luci-theme-kucat
 git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
-#rm -rf feeds/packages/net/ariang
-#rm -rf feeds/luci/applications/luci-app-aria2
+rm -rf feeds/packages/net/ariang
+rm -rf feeds/luci/applications/luci-app-aria2
 #git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
-#git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
+git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
 ./scripts/feeds update -a
 ./scripts/feeds install -a
