@@ -89,6 +89,6 @@ git clone https://github.com/uparrows/luci-theme-darkmatter.git package/luci-the
 #rm -rf feeds/packages/net/ariang
 #rm -rf feeds/luci/applications/luci-app-aria2
 #git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
-rm -rf package/lean/luci-theme-aria2 && git clone https://github.com/sirpdboy/sirpdboy-package.git
+rm -rf package/lean/luci-app-aria2 && git clone https://github.com/sirpdboy/sirpdboy-package.git
 ./scripts/feeds update -a
 ./scripts/feeds install -a
