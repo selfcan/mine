@@ -86,7 +86,8 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-
 add luci-theme-kucat
 git clone https://github.com/selfcan/luci-theme-kucat.git package/luci-theme-kucat
 git clone https://github.com/uparrows/luci-theme-darkmatter.git package/luci-theme-darkmatter
-#rm -rf feeds/packages/net/ariang
+rm -rf feeds/packages/net/ariang
+rm -rf feeds/packages/net/aria2
 rm -rf feeds/luci/applications/luci-app-aria2
 #git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
 git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
