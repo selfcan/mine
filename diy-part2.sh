@@ -29,7 +29,7 @@ git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 #添加 luci-app-my-dnshelper
 git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 #添加luci-app-filebrowser
-git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
+#git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 #添加luci-app-dockerman
