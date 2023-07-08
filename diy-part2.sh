@@ -92,5 +92,6 @@ rm -rf feeds/packages/net/aria2
 rm -rf feeds/luci/applications/luci-app-aria2
 #git clone https://github.com/sbwml/ariang-nginx package/ariang-nginx
 git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
+git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
 ./scripts/feeds update -a
 ./scripts/feeds install -a
