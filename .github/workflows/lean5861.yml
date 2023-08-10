@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/selfcan/lede.git
+  REPO_URL: https://github.com/tcsr200722/coolsnowwolf-lede.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .5861config
