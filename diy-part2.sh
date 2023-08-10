@@ -95,5 +95,6 @@ rm -rf feeds/luci/applications/luci-app-aria2
 git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
 git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
 git clone https://github.com/kenzok78/luci-app-fileassistant.git package/luci-app-fileassistant
+git clone https://github.com/selfcan/luci-app-parentcontrol.git package/luci-app-parentcontrol
 ./scripts/feeds update -a
 ./scripts/feeds install -a
