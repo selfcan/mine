@@ -96,5 +96,6 @@ git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-pack
 git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
 git clone https://github.com/selfcan/luci-app-fileassistant.git package/luci-app-fileassistant
 git clone https://github.com/selfcan/luci-app-parentcontrol.git package/luci-app-parentcontrol
+git clone https://github.com/sirpdboy/myautocore package/myautocore
 ./scripts/feeds update -a
 ./scripts/feeds install -a
