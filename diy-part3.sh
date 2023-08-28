@@ -13,9 +13,9 @@
 # Uncomment a feed source
 sed -i "/helloworld/d" "feeds.conf.default"
 # Modify X86 Kernel 5.4
-#sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.4/g' ./target/linux/x86/Makefile
+#sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.4/g' ./target/linux/ramips/mt7621/Makefile
 # Modify X86 Kernel 5.19
-sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
+sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/ramips/mt7621/Makefile
 
 # Add a feed source
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
