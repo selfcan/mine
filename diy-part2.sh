@@ -97,5 +97,6 @@ git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-p
 git clone https://github.com/selfcan/luci-app-fileassistant.git package/luci-app-fileassistant
 git clone https://github.com/selfcan/luci-app-parentcontrol.git package/luci-app-parentcontrol
 git clone https://github.com/sirpdboy/myautocore package/myautocore
+git clone https://github.com/selfcan/luci-app-quickstart.git package/luci-app-quickstart
 ./scripts/feeds update -a
 ./scripts/feeds install -a
