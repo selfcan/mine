@@ -98,5 +98,6 @@ git clone https://github.com/selfcan/luci-app-fileassistant.git package/luci-app
 git clone https://github.com/selfcan/luci-app-parentcontrol.git package/luci-app-parentcontrol
 git clone https://github.com/sirpdboy/myautocore package/myautocore
 git clone https://github.com/selfcan/luci-app-quickstart.git package/luci-app-quickstart
+git clone https://github.com/selfcan/luci-app-airconnect.git package/luci-app-airconnect
 ./scripts/feeds update -a
 ./scripts/feeds install -a
