@@ -22,8 +22,9 @@ sed -i 's/luci-theme-bootstrap/luci-theme-darkmatter/g' ./feeds/luci/collections
 #rm -rf luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 # 重新添加 luci-app-adbyby-plus-lite
-#rm -rf feeds/luci/applications/luci-app-adbyby-plus
+rm -rf feeds/luci/applications/luci-app-adbyby-plus
 #git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
+git clone https://github.com/ywt114/luci-app-adbyby-plus.git package/luci-app-adbyby-plus
 #添加luci-app-netspeedtest
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 #添加 luci-app-my-dnshelper
