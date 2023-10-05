@@ -58,15 +58,15 @@ jobs:
         sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
         #改 DHCP 分配起始、终结地址
         sed -i 's/192.168.2.100/10.10.10.100/' /opt/rt-n56u/trunk/user/shared/defaults.h
-        sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h   
         #修改 2.4G 自动剔除已连接的弱信号设备:
-        sed -i 's/{ "rt_KickStaRssiLow", "0" }/{ "rt_KickStaRssiLow", "-85" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        sed -i 's/{ "rt_KickStaRssiLow", "0" }/{ "rt_KickStaRssiLow", "-90" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         #修改 2.4G 自动限制弱信号设备接入:
-        sed -i 's/{ "rt_AssocReqRssiThres", "0" }/{ "rt_AssocReqRssiThres", "-80" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        sed -i 's/{ "rt_AssocReqRssiThres", "0" }/{ "rt_AssocReqRssiThres", "-85" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         #修改 5.8G 自动剔除已连接的弱信号设备:
-        sed -i 's/{ "wl_KickStaRssiLow", "0" }/{ "wl_KickStaRssiLow", "-85" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        sed -i 's/{ "wl_KickStaRssiLow", "0" }/{ "wl_KickStaRssiLow", "-90" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         #修改 5.8G 自动限制弱信号设备接入:
-        sed -i 's/{ "wl_AssocReqRssiThres", "0" }/{ "wl_AssocReqRssiThres", "-75" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        sed -i 's/{ "wl_AssocReqRssiThres", "0" }/{ "wl_AssocReqRssiThres", "-85" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         ################################################################################################
         #因不同型号配置功能不一样，所以先把配置项删除，如果你自己要添加其他的，也要写上删除这一条，切记！！！
         ################################################################################################
