@@ -34,7 +34,8 @@ git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-m
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/takayukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/selfcan/luci-app-filebrowser-1.git package/luci-app-filebrowser
-git clone https://github.com/wangqn/luci-app-filebrowser package/luci-app-filebrowser
+#git clone https://github.com/wangqn/luci-app-filebrowser package/luci-app-filebrowser
+git clone https://github.com/kenzok78/luci-app-filebrowser.git package/luci-app-filebrowser
 #添加luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
