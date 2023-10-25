@@ -37,7 +37,7 @@ jobs:
         if [ $KERNEL = "4.4" ] ; then
         git clone --depth=1 https://github.com/MeIsReallyBa/padavan-4.4.git /opt/rt-n56u
         else
-        git clone --depth=1 https://github.com/selfcan/Padavan-KVR-vb1980.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/selfcan/Padavan-3.4-KVR.git /opt/rt-n56u
         fi
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
@@ -55,10 +55,10 @@ jobs:
         cp -f configs/templates/$TNAME.config .config
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         #改 LAN IP 信息
-        #sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
         #改 DHCP 分配起始、终结地址
-        #sed -i 's/192.168.2.100/10.10.10.100/' /opt/rt-n56u/trunk/user/shared/defaults.h
-        #sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h   
+        sed -i 's/192.168.2.100/10.10.10.100/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h   
         #修改 2.4G 自动剔除已连接的弱信号设备:
         sed -i 's/{ "rt_KickStaRssiLow", "0" }/{ "rt_KickStaRssiLow", "-90" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         #修改 2.4G 自动限制弱信号设备接入:
@@ -70,12 +70,12 @@ jobs:
         ################################################################################################
         #因不同型号配置功能不一样，所以先把配置项删除，如果你自己要添加其他的，也要写上删除这一条，切记！！！
         ################################################################################################
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y/g' .config
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n/CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y/g' .config
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=y/g' .config
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_SRELAY=n/CONFIG_FIRMWARE_INCLUDE_SRELAY=y/g' .config
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y/g' .config
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n/g' .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n/CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n/g' .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n/g' .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_SRELAY=n/CONFIG_FIRMWARE_INCLUDE_SRELAY=n/g' .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n/g' .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/g' .config
         ######################################################################
         #以下选项是定义你需要的功能（y=集成,n=忽略），重新写入到.config文件
         ######################################################################
