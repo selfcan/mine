@@ -40,6 +40,20 @@ jobs:
         exit 1
         fi
         cp -f configs/templates/$TNAME.config .config
+        sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
+        #改 LAN IP 信息
+        sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        #改 DHCP 分配起始、终结地址
+        sed -i 's/192.168.2.100/10.10.10.100/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h   
+        #修改 2.4G 自动剔除已连接的弱信号设备:
+        sed -i 's/{ "rt_KickStaRssiLow", "0" }/{ "rt_KickStaRssiLow", "-90" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        #修改 2.4G 自动限制弱信号设备接入:
+        sed -i 's/{ "rt_AssocReqRssiThres", "0" }/{ "rt_AssocReqRssiThres", "-85" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        #修改 5.8G 自动剔除已连接的弱信号设备:
+        sed -i 's/{ "wl_KickStaRssiLow", "0" }/{ "wl_KickStaRssiLow", "-90" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
+        #修改 5.8G 自动限制弱信号设备接入:
+        sed -i 's/{ "wl_AssocReqRssiThres", "0" }/{ "wl_AssocReqRssiThres", "-85" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         ################################################################################################
         #因不同型号配置功能不一样，所以先把配置项删除，如果你自己要添加其他的，也要写上删除这一条，切记！！！
         ################################################################################################
@@ -52,10 +66,10 @@ jobs:
         #以下选项是定义你需要的功能（y=集成,n=忽略），重新写入到.config文件
         ######################################################################
         
-        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
-        #echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #SHADOWSOCKS 
-        #echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config 
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config  
+        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
+        #echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config #SHADOWSOCKS 
+        #echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config 
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config  
         ###############################################################################
         ##########
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
