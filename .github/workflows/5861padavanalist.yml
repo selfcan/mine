@@ -71,6 +71,7 @@ jobs:
         #echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config 
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config #adbyby plus+
+        echo "CONFIG_FIRMWARE_INCLUDE_CADDY=y" >> .config #在线文件管理服务
         ###############################################################################
         ##########
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
