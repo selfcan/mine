@@ -72,7 +72,7 @@ CONFIG_TARGET_ramips_mt7621=y
 # CONFIG_TARGET_ramips_mt7621_DEVICE_gehua_ghl-r-001 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_gnubee_gb-pc1 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_gnubee_gb-pc2 is not set
-# CONFIG_TARGET_ramips_mt7621_DEVICE_hiwifi_hc5962 is not set
+CONFIG_TARGET_ramips_mt7621_DEVICE_hiwifi_hc5962=y
 # CONFIG_TARGET_ramips_mt7621_DEVICE_iodata_wn-ax1167gr is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_iodata_wn-ax1167gr2 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_iodata_wn-dx1167r is not set
@@ -100,7 +100,7 @@ CONFIG_TARGET_ramips_mt7621=y
 # CONFIG_TARGET_ramips_mt7621_DEVICE_netgear_wndr3700-v5 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_netis_wf2881 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_lenovo_newifi-d1 is not set
-CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
+# CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_pbr-m1 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_phicomm_k2p is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_planex_vr500 is not set
