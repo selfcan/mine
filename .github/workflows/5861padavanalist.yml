@@ -29,6 +29,17 @@ jobs:
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
+        - name: Install themes
+      run: |
+        if [[ -n $PADAVAN_THEMES ]]; then
+          git clone --depth 1 -b "$PADAVAN_THEMES_BRANCH" "$PADAVAN_THEMES_REPO" themes
+          cp -r themes/common-theme themes/jquery.js padavan-ng/trunk/user/www/n56u_ribbon_fixed
+
+          for theme in $PADAVAN_THEMES; do
+            echo "Installing $theme theme"
+            cp -r "themes/$theme-theme" padavan-ng/trunk/user/www/n56u_ribbon_fixed
+          done
+        fi
     - name: Build Firmware
       env:
         TNAME: HC5861
