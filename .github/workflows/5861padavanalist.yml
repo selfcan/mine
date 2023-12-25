@@ -72,8 +72,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config #adbyby plus+
         echo "CONFIG_FIRMWARE_INCLUDE_CADDY=y" >> .config #在线文件管理服务
-        echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=y" >> .config #ddnsto
-        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
+        echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config #ddnsto
+        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
         ###############################################################################
         ##########
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
