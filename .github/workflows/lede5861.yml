@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/selfcan/lede-17.01.4-Mod.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .5861config
+  CONFIG_FILE: .58611config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
