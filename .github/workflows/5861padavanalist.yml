@@ -25,7 +25,7 @@ jobs:
       env:
         KERNEL: 3.4
       run: |
-        git clone --depth=1 https://github.com/tcsr200722/Padavan-KVR-alist.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/selfcan/Padavan-3.4-KVR.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
