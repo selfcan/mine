@@ -55,10 +55,10 @@ jobs:
         cp -f configs/templates/$TNAME.config .config
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         #改 LAN IP 信息
-        #sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        sed -i 's/192.168.2.1/10.10.10.10/' /opt/rt-n56u/trunk/user/shared/defaults.h
         #改 DHCP 分配起始、终结地址
-        #sed -i 's/192.168.2.100/10.10.10.100/' /opt/rt-n56u/trunk/user/shared/defaults.h
-        #sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h   
+        sed -i 's/192.168.2.100/10.10.10.100/' /opt/rt-n56u/trunk/user/shared/defaults.h
+        sed -i 's/192.168.2.244/10.10.10.244/' /opt/rt-n56u/trunk/user/shared/defaults.h   
         #修改 2.4G 自动剔除已连接的弱信号设备:
         sed -i 's/{ "rt_KickStaRssiLow", "0" }/{ "rt_KickStaRssiLow", "-90" }/' /opt/rt-n56u/trunk/user/shared/defaults.c
         #修改 2.4G 自动限制弱信号设备接入:
