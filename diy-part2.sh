@@ -27,6 +27,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-darkmatter/g' ./feeds/luci/collections
 #git clone https://github.com/ywt114/luci-app-adbyby-plus.git package/luci-app-adbyby-plus
 #添加luci-app-netspeedtest
 #git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
 #添加 luci-app-my-dnshelper
 #git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 #添加luci-app-filebrowser
