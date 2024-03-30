@@ -61,6 +61,7 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-auto
 #wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile
 #添加luci-app-oaf网络过滤
 #git clone https://github.com/tcsr200722/OpenAppFilter.git package/luci-app-oaf
+git clone https://github.com/sbwml/OpenAppFilter.git package/luci-app-oaf
 #添加luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 #添加luci-app-gowebdav
