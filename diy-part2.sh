@@ -79,6 +79,7 @@ git clone https://github.com/sbwml/openwrt-alist.git package/luci-app-alist
 # 重新添加 luci-app-netdata
 #rm -rf feeds/luci/applications/luci-app-netdata
 #git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
+git clone https://github.com/selfcan/luci-app-syncthing.git package/luci-app-syncthing
 #添加go-aliyun-webdav
 #git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 #git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git package/luci-app-go-aliyundrive-webdav
