@@ -1,5 +1,5 @@
 #修改TNAME: K2P 中的K2P为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: HC5861 kvr
+name: B70
 
 on: 
   release:
@@ -37,14 +37,14 @@ jobs:
         if [ $KERNEL = "4.4" ] ; then
         git clone --depth=1 https://github.com/MeIsReallyBa/padavan-4.4.git /opt/rt-n56u
         else
-        git clone --depth=1 https://github.com/selfcan/Padavan-3.4-KVR.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/lmq8267/padavan-KVR.git /opt/rt-n56u
         fi
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: HC5861
+        TNAME: B70
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
